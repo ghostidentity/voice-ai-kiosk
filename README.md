@@ -55,9 +55,9 @@ bash generate-certs.sh
 
 ## Client
 
-Install on Raspberry Pi 5 and ensure the user has root permissions.
+Install on Raspberry Pi 5 device w/ microphone, speaker and monitor connected to it.  The user that will install the program must have root permission.
 
-**Important:** The server must be running before installing and starting the client.
+**Important:** The server must be running before installing and starting the client. 
 
 ### Pre-Installation
 
