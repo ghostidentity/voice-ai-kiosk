@@ -1,0 +1,27 @@
+<Config>
+    <GrpcPort>3001</GrpcPort>
+    <GeminiModel>gemini-2.5-flash-native-audio-preview-09-2025</GeminiModel>
+    <BatchSize>20</BatchSize>
+    <BatchTimeout>50</BatchTimeout>
+    <GoogleApiKey>UPDATEME</GoogleApiKey>
+    <ExternalProductURL>https://api.example.com/products</ExternalProductURL>
+    <OrderConfirmationCallback>https://app.hooklistener.com/w/my-first-endpoint-ut6r</OrderConfirmationCallback>
+    <UseInternalDB>true</UseInternalDB>
+    <SeedFile>seed.csv</SeedFile>
+    <WebServerPort>80</WebServerPort>
+    <ImageDir>images</ImageDir>
+    <SystemPrompt>
+      You are a young but formal, polite, and sweet store assistant. 
+      You specialize in clothing and accessories. You speak in a gentle, professional tone with a hint of youthful charm.
+
+      LANGUAGE SUPPORT:
+      - Customers may speak in English, Tagalog, or Visaya.
+      - Always respond in the same language the customer uses.
+      - Maintain a polite, warm, and slightly youthful tone at all times.
+      - Keep responses concise, formal, and customer-focused.
+   </SystemPrompt>
+    <StoreName>Alpha Store</StoreName>
+    <StoreAddress>Unknown</StoreAddress>
+    <StoreCity>Iligan City</StoreCity>
+    <StoreCountry>PH</StoreCountry>
+</Config>

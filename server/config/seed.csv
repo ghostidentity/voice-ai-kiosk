@@ -1,0 +1,9 @@
+id,name,price,quantity,category,in_stock,description,image_url
+P00001,Classic T-Shirt,499,50,clothing,true,Comfortable cotton tee,http://192.168.88.253/images/tshirt.png
+P00002,Coffee Mug,199,0,accessories,false,Ceramic mug,
+P00003,Denim Jeans,1299,30,clothing,true,Stretch denim,
+P00004,Baseball Cap,399,45,accessories,true,Embroidered logo,
+P00005,Hoodie,899,25,clothing,true,Fleece with pocket,
+P00006,Leather Wallet,599,60,accessories,true,Bifold card slots,
+P00007,Running Shoes,1499,20,clothing,true,Cushioned sole,
+P00008,Sunglasses,799,0,accessories,false,UV protection,
