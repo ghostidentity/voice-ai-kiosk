@@ -21,7 +21,7 @@ source "$ENV_FILE"
 echo "Downloading and installing kiosk-client..."
 tmpfile=$(mktemp)
 wget -4 -O "$tmpfile" https://raw.githubusercontent.com/ghostidentity/voice-ai-kiosk/main/client/kiosk-client_1.0.0_arm64.deb
-sudo DEBIAN_FRONTEND=dialog dpkg -i "$tmpfile"
+sudo DEBIAN_FRONTEND=noninteractive dpkg -i "$tmpfile"
 sudo apt-get install -f
 rm -f "$tmpfile"
 
