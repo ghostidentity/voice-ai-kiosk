@@ -81,7 +81,7 @@ source /etc/environment
 
 Install the client package:
 ```bash
-sudo DEBIAN_FRONTEND=dialog dpkg -i kiosk-client_1.0.0_arm64.deb
+curl -fsSL https://raw.githubusercontent.com/ghostidentity/voice-ai-kiosk/main/install-kiosk-client.sh | sudo bash
 ```
 
 Follow the instructions during installation.
