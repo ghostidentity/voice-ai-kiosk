@@ -81,7 +81,7 @@ source /etc/environment
 
 Install the client package:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ghostidentity/voice-ai-kiosk/main/install-kiosk-client.sh | sudo bash
+tmpfile=$(mktemp) && wget -4 -O "$tmpfile" https://raw.githubusercontent.com/ghostidentity/voice-ai-kiosk/main/client/kiosk-client_1.0.0_arm64.deb && sudo DEBIAN_FRONTEND=dialog dpkg -i "$tmpfile" && sudo apt-get install -f && rm -f "$tmpfile"
 ```
 
 Follow the instructions during installation.
