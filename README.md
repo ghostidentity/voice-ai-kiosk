@@ -5,7 +5,6 @@ A voice-powered kiosk system for handling customer orders through natural langua
 - Voice-Activated Ordering - Hands-free customer interaction
 - Natural Language Processing - Understands conversational requests
 - Real-Time Confirmation - Instant receipt printing
-- Automated Callback System - Seamless order fulfillment integration
 - End-to-End Encryption - Secure communication throughout
 - Windows Service Deployment - Run as background service for 24/7 operation
 - Flexible Integration - Local apps via Named Pipes, remote systems via HTTP Callbacks
