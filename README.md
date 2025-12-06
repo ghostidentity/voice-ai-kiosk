@@ -2,19 +2,17 @@
 A voice-powered kiosk system for handling customer orders through natural language interaction.
 
 ## Features
-- Voice-activated order taking
-- Natural language processing for customer interactions
-- Real-time order confirmation and receipt printing
-- Automated order callback integration
-- Secure encrypted communication
-
-## Server
-
-Tested to work on Windows 11.
+- Voice-Activated Ordering - Hands-free customer interaction
+- Natural Language Processing - Understands conversational requests
+- Real-Time Confirmation - Instant receipt printing
+- End-to-End Encryption - Secure communication throughout
+- Windows Service Deployment - Run as background service for 24/7 operation
+- Flexible Integration - Local apps via Named Pipes, remote systems via HTTP Callbacks
 
 ### Prerequisites
 - Valid Gemini API key (create one at https://aistudio.google.com/api-keys)
 - Valid SSL certificates (see Certificate Management section below)
+- Raspberry PI 5 w/ microphone, speaker and monitor.
 
 ### Configuration
 
@@ -22,12 +20,12 @@ Before running the server, update the `core.xml` config file with:
 - A valid `GoogleAPIKey`
 - The `OrderConfirmationCallBackUrl` for order callbacks
 
-### Running the Server
+### Running the Server as standalone program
 ```bash
 kiosk-server-windows-amd64.exe 
 ```
 
-**Note:** The server can be configured to run as a Windows service so it starts automatically on boot.
+**Note:** The server can be configured to run as a Windows service so it starts automatically on boot, you can execute "manager.bat install" on terminal.  Once the service is installed, you can create a custom program to listen to pipe called "KioskOrderConfirmation". The server will send order confirmation to the pipe. You can use the sample code "program.cs" as a reference.
 
 ### Certificate Management
 
@@ -45,8 +43,7 @@ bash generate-certs.sh
 
 **Important:** 
 - Update the OpenSSL path in the script before executing it
-- Certificates are valid for 1 year
-- Optionally, you can use the stored keys in the config folder
+- You can use the stored keys in the config folder but its valid for 1 year only or generate your own key.
 
 **For Client:**
 - The client installer includes default keys, but you should update them manually for production use
